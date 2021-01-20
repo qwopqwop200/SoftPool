@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+#Due to the difference in implementation method, there may be very slight differences in result values.
 class SoftPooling1D(tf.keras.layers.Layer):
     def __init__(self,pool_size=2, strides=None, padding='valid',data_format='channels_last'):
         super(SoftPooling1D, self).__init__()
