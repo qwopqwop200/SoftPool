@@ -1,5 +1,6 @@
 import torch
 
+#Due to the difference in implementation method, there may be very slight differences in result values.
 class SoftPooling1D(torch.nn.Module):
     def __init__(self,kernel_size,strides=None,padding=0,ceil_mode = False,count_include_pad = True):
         super(SoftPooling1D, self).__init__()
